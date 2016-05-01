@@ -8,7 +8,7 @@ import com.google.api.server.spi.config.Named;
 import com.metu.sarhas.model.Incident;
 import com.metu.sarhas.repo.IncidentRepo;
 
-@Api(name = "incident", version = "v1")//${sarhas}.appspot.com/_ah/api/incident/v1 ??
+@Api(name = "incident", version = "v1")//project-sarhas.appspot.com/_ah/api/incident/v1 ??
 public class IncidentEndpoint {
 
 	 @ApiMethod(name = "list", httpMethod = ApiMethod.HttpMethod.GET, path="list")
