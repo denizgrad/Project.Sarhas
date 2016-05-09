@@ -1,5 +1,7 @@
 package com.metu.sarhas.model;
 
+import java.util.Date;
+
 import com.googlecode.objectify.annotation.Entity;
 import com.googlecode.objectify.annotation.Id;
 
@@ -10,7 +12,19 @@ public class Incident {
 	private String title;
 	private boolean completed;
 	private String type;
+	private Date incidentTime;
 
+	public Date getIncidentTime() {
+		return incidentTime;
+	}
+
+	public void setIncidentTime(Date incidentTime) {
+		this.incidentTime = incidentTime;
+	}
+
+	public Incident(){//for JSON
+	}
+	
 	public Incident(Long id, String title, boolean completed) {
 		this.id = id;
 		this.title = title;
